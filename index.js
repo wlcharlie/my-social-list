@@ -114,8 +114,8 @@ paginator.addEventListener('click', function paginatorGoTo(event) {
     let pageItem = document.querySelectorAll('.page-item')
     let pageDataUser = dataUser.slice((page - 1) * USER_PER_PAGE, page * USER_PER_PAGE)
     dataRender(pageDataUser)
-    pageItem.forEach(item => item.classList.remove('active'))
-    event.target.parentElement.classList.add('active')
+    pageItem.forEach(item => item.classList.remove('activePage'))
+    event.target.parentElement.classList.add('activePage')
     searchBar.value = ""
   }
 })

@@ -1,0 +1,200 @@
+body {
+  background-color: rgb(36, 36, 36);
+  position: relative;
+}
+
+footer {
+  margin: 2rem 0;
+  font-size: 0.5vw;
+}
+
+/* header */
+header a .header-title{
+  color: #eeeeee!important;
+  margin: 35px 0 0 0;
+  padding: 15px 5px;
+  border: 1px solid #eeeeee;
+  transition: box-shadow 0.2s;
+}
+
+header a .header-title:hover {
+  color: #eeeeee!important;
+  margin: 35px 0 0 0;
+  padding: 15px 5px;
+  border: 1px solid #eeeeee;
+  box-shadow: 5px 10px 0px 0px #eeeeee;
+}
+
+.header-link {
+  color: #eeeeee!important;
+  margin: 35px 0 0 0;
+  padding: 15px 5px;
+  border: 1px solid #eeeeee;
+  transition: box-shadow 0.2s;
+}
+
+.header-link:hover {
+  color: #eeeeee!important;
+  margin: 35px 0 0 0;
+  padding: 15px 5px;
+  border: 1px solid #eeeeee;
+  box-shadow: 5px 10px 0px 0px #eeeeee;
+}
+
+/* user */
+h5.section-title{
+  color: #eeeeee!important;
+  width: 50%;
+  margin: 35px 0 0 0;
+  padding: 15px 5px;
+  border: 1px solid #eeeeee;
+  box-shadow: 20px 0px 0px 0px #eeeeee, -20px 0px 0px 0px #eeeeee;
+}
+
+p.section-title{
+  color: #eeeeee!important;
+  margin: 35px 0 0 0;
+  padding: 15px 5px;
+  border: 1px solid #eeeeee;
+  box-shadow: 5px 10px 0px 0px #eeeeee;
+}
+
+.border-white {
+  border-color: rgb(36, 36, 36)!important;
+}
+
+.user-info:hover {
+  cursor: pointer;
+}
+
+.card {
+  color: #eeeeee;
+  background-color: rgb(36, 36, 36, 0);
+  border: 1px solid rgb(36, 36, 36, 0)!important;
+  right: 0px;
+  bottom: 0px;
+  transition: all 0.3s;
+  animation: fadein 0.5s;
+  -webkit-animation: fadein 0.5s; 
+}
+
+.card:hover {
+  right: 5px;
+  bottom: 10px;
+  border: 1px solid rgb(122, 122, 122)!important;
+  box-shadow: 5px 10px 0px 0px #eeeeee;
+}
+
+#recommend div {
+  margin: 0.5rem 0;
+}
+
+#recommend img {  
+  filter: blur(0px);
+  transform: scale(1);
+  border-radius: 1rem;
+  transition: all 0.3s;
+}
+
+#recommend img:hover {
+  cursor: grab;
+  filter: blur(5px);
+  transform: scale(0.8);
+}
+
+#planInfo {
+  margin: 0 auto;
+  width: 50%
+}
+
+#planInfo p {
+  margin: 1rem 0;
+  color:#eeeeee;
+}
+
+#dataPanel {
+  border: 1px solid #eeeeee;
+  padding: 1rem;
+  min-height: 600px;
+  min-width: 600px;
+  width: 60vw;
+  max-width: 1100px;
+  box-shadow: 5px -20px 0 0 #eeeeee;
+}
+
+@keyframes fadein { 
+    from {
+        opacity:0;
+        left: 20px;
+    }
+    to {
+        opacity:1;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 1000px){
+  #main-area {
+    display: flex!important;
+    flex-direction: column!important;
+    justify-content: center!important;
+    align-items: center!important;
+  }
+
+  #recommend {
+    display: flex!important;
+    flex-direction: row!important;
+    
+  }
+
+  #recommend img {
+    border-radius: 1rem!important;
+    margin: 0 1rem!important;
+  }
+} 
+
+@media screen and (max-width: 650px) {
+  header nav{
+    flex-direction: column;
+  }
+
+  header nav div {
+    margin: 1rem 0;
+  }
+}
+
+/* bgimage */
+
+.bg-image {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+.bg-image.one {
+  top: 600px;
+  left: 50px;
+}
+
+.bg-image.one img {
+  width: 250px
+}
+
+.bg-image.two {
+  top: 850px;
+  right: 10px;
+}
+
+.bg-image.two img {
+  width: 450px
+}
+
+.bg-image.three {
+  top: -20px;
+  right: 70px;
+}
+
+.bg-image.three img {
+  width: 100px;
+  transform: rotate(-100deg)
+}

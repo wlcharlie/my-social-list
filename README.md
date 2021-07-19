@@ -2,6 +2,8 @@
 
 ## 在地外國嚮導— 歪國人看台中
 
+![image](https://i.imgur.com/y1FatK9.png)
+
 ### 簡介
 
 * 建立基礎網站、串接API
